@@ -49,7 +49,7 @@ if (getDevice === 'other') {
     sentence.classList.toggle('opacity')
   }, 4000)
 } else {
-
+  // fix
   var sentence = document.getElementById('sentence')
   sentence.classList.toggle('opacity-2')
 }
