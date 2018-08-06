@@ -52,6 +52,15 @@ p {
 }
 
 
+#suedo-display {
+  background-image: url('https://i.ytimg.com/vi/teFbTbizCnQ/maxresdefault.jpg');
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+
 /*#player iframe {
   top: 0;
   left: 0;
@@ -66,11 +75,15 @@ p {
 }
 
 .normal {
-  transition: background 5.0s;
   background: rgba(255, 255, 255, 1.0);
 }
 
 .opacity {
   transition: background 5.0s;
   background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.opacity-2 {
+  transition: background 5.0s;
+  background: rgba(255, 255, 255, 0.8) !important;
 }
