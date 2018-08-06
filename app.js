@@ -12,7 +12,7 @@ var getDevice = (function(){
 })();
 
 
-if (!(getDevice === 'other')) {
+if (getDevice === 'other') {
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
