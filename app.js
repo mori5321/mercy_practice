@@ -42,6 +42,8 @@ if (getDevice === 'other') {
   }
 
   var sentence = document.getElementById('sentence')
+  var display = document.getElementById('suedo-display')
+  display.classList.toggle('hidden')
 
   setTimeout(function() {
     sentence.classList.toggle('opacity')
