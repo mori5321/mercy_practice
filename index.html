@@ -4,17 +4,33 @@
   <title>慈悲のプラクティス</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
 <body>
+
 
 <div id="player">
 </div>
 
 <div id="suedo-display">
-  
 </div>
 
+
 <div id="sentence" class="normal">
+  <div id="modal-overlay">
+  </div>
+  <div id="modal">
+    <h1>■慈悲のプラクティス</h1>
+    <p>「慈悲のプラクティス」とは、原始仏教の世界などで使われる瞑想法のひとつです</p>
+    <p>ノースカロライナ大学による実験では、「慈悲のプラクティス」を49日間続けた被験者はポジティブな感情が大幅にアップし、気分が落ち込む回数も少なくなりました。これらのデータを受け、最近ではGoogleが社員研修のプログラムに「慈悲のプラクティス」を取り入れています。</p>
+    <h3>■使い方</h3>
+    <p>1日10分間、静かな空間でこの文章を口に出して唱えましょう。</p>
+    <h3>■出典</h3>
+    <p><a href="http://amzn.asia/eHV73IH" target="_blank">週40時間の時間をつくる超時間術(Daigo)</a></p>
+  </div>
+  <div id="openButton">
+    How To Use
+  </div>
   <h1>慈悲のプラクティス</h1>
 
   <p>
@@ -55,6 +71,21 @@
 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="app.js"></script>
+
+<script src="modal.js"></script>
+
+<script>
+let modal = document.querySelector('#modal');
+let overlay = document.querySelector('#modal-overlay');
+let buttons = {
+  openButton: document.querySelector('#openButton')
+}
+
+console.log(overlay)
+
+let modal_obj = new Modal(modal, overlay, buttons);
+modal_obj.setEventListeners();
+</script>
 
 </body>
 </html>
