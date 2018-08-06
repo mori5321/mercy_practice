@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body, h1, p {
+  font-family: "Yu Mincho", "YuMincho";
+  font-weight: 100;
+  color: #57677F;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 30px 30px 45px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+@media (max-width: 465px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+}
+
+
+#player {
+  width: 1200vw;
+  height: 120vh;
+  background: #fff;
+  position: fixed;
+  z-index: -1;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+
+/*#player iframe {
+  top: 0;
+  left: 0;
+  width: 1200vw;
+  height: 100vh;
+}*/
+
+#sentence {
+  margin: 0;
+  padding: 50px 30px 70px;
+  z-index: 100;
+}
+
+.normal {
+  transition: 5.0s;
+  background: rgba(255, 255, 255, 1.0);
+}
+
+.opacity {
+  transition: 5.0s;
+  background: rgba(255, 255, 255, 0.75) !important;
+}
